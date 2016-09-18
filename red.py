@@ -24,5 +24,6 @@ for submission in subreddit.get_hot(limit = 50):
         flat_comments = praw.helpers.flatten_tree(submission.comments)
         for comment in flat_comments:
             for match in re.finditer('<(.*?)>'):
+                # build the response?
 
 
